@@ -1,0 +1,25 @@
+# Ignore everything
+*
+
+# But not these files...
+!.*
+!.vim/**
+!*rc
+!*tmux/**
+#ignore these files specifically
+.CFUserTextEncoding
+.DS_Store
+.Trash
+*zcompdump*
+*history
+.bash_sessions/
+.atom/
+.vim/backup
+.vim/swap
+.vim/undo
+.nvm/
+.lesshst
+.zsh-update
+*viminfo*
+
+
