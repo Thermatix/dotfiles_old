@@ -27,3 +27,7 @@ call Allmap('   <ESC>[1;2d      <S-d>')
 call Allmap('   <ESC>[1;2x      <S-x>')
 call Allmap('   <ESC>[1;2s      <S-s>')
 call Allmap('   <ESC>[3~        <Del>')
+call Allmap('   <ESC>[1;2h       <S-h>')
+call Allmap('   <ESC>[1;2l       <S-l>')
+
+

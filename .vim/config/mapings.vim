@@ -1,8 +1,8 @@
 so ~/.vim/config/key_codes.vim
 
 " Buffer switching
-nnoremap <S-n> :bnext<CR>
-nnoremap <S-p> :bprev<CR>
+nnoremap <S-l> :bnext<CR>
+nnoremap <S-h> :bprev<CR>
 
 " \d delete buffer
 nnoremap <S-x> :Kwbd<CR> 
