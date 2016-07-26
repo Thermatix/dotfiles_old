@@ -13,6 +13,8 @@ nnoremap <A-x> <C-x>
 
 nmap <C-W>! <Plug>Kwbd
 
+nmap <C-p> :CommandT<CR>
+
 map <Leader>c :call vroom#RunTestFile()<CR>
 map <Leader>s :call vroom#RunNearestTest()<CR>
 " \t to jump to test file

@@ -78,7 +78,8 @@ Bundle 'vim-airline/vim-airline'
 
 " Git tools
 Bundle 'tpope/vim-fugitive'
-" Dependency managment
+"gtk clone
+Bundle 'gregsexton/gitv' 
 
 " Gutter
 Bundle 'airblade/vim-gitgutter'
@@ -92,11 +93,9 @@ Bundle 'jiangmiao/auto-pairs'
 "multi cursor
 Bundle 'terryma/vim-multiple-cursors'
 
-" Fuzzu finder for vim (CTRL+P)
-Bundle 'kien/ctrlp.vim'
+" Fuzzu finder for vim 
+Bundle 'wincent/command-t'
 
-"enables silver_searcher
-"Bundle 'rking/ag.vim'
 
 " Easy motion for easy motion
 Bundle 'Lokaltog/vim-easymotion'
@@ -105,7 +104,6 @@ Bundle 'Lokaltog/vim-easymotion'
 Bundle 'tpope/vim-dispatch'
 "navigate tmux pains easily
 Bundle 'christoomey/vim-tmux-navigator'
-"allows Vim events to work in Tmux
 Bundle 'tmux-plugins/vim-tmux-focus-events'
 
 "syntax highlighting for tmux/conf
@@ -113,6 +111,19 @@ Bundle 'tmux-plugins/vim-tmux'
 
 " Syntax checking
 Bundle 'scrooloose/syntastic'
+
+"auto file taging and browser
+Bundle 'xolox/vim-misc'
+Bundle 'xolox/vim-easytags'
+Bundle 'majutsushi/tagbar'
+
+
+"markdown
+Bundle 'godlygeek/tabular'
+Bundle 'plasticboy/vim-markdown'
+
+"open FIle at line
+Bundle 'bogado/file-line'
 
 " Gist
 Bundle 'mattn/webapi-vim'
@@ -127,11 +138,3 @@ Bundle 'scrooloose/nerdTree'
 Bundle 'Xuyuanp/nerdtree-git-plugin'
 Bundle 'jistr/vim-nerdtree-tabs'
 
-" Sublime/atom style minimap
-Bundle 'severin-lemaignan/vim-minimap'
-
-" auto brackets plus dependencies
-Bundle 'LucHermitte/lh-vim-lib'
-Bundle 'LucHermitte/lh-tags'
-Bundle 'LucHermitte/lh-dev'
-Bundle 'LucHermitte/lh-brackets'
