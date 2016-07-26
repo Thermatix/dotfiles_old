@@ -17,7 +17,7 @@ colorscheme molokai
 set nu
 
 
-let g:airline_theme='luna'
+let g:airline_theme='ubaryd'
 let g:airline_powerline_fonts=1
 set laststatus=2
 
