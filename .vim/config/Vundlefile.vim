@@ -47,6 +47,8 @@ Bundle 'skalnik/vim-vroom'
 " erb
 "Bundle 'whatyouhide/vim-textobj-erb'
 
+"Heredoc Highlighting
+Bundle 'joker1007/vim-ruby-heredoc-syntax'
 
 "=====javascript=====
 " javascript
