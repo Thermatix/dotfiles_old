@@ -7,6 +7,10 @@ nnoremap <S-h> :bprev<CR>
 " \d delete buffer
 nnoremap <S-x> :Kwbd<CR> 
 
+"tagbar toggling
+map <F8> :TagbarToggle<CR> 
+map <F7> :NERDTreeToggle<CR>
+
 " Increment numbers
 nnoremap <A-a> <C-a>
 nnoremap <A-x> <C-x>
