@@ -117,6 +117,8 @@ Bundle 'xolox/vim-misc'
 Bundle 'xolox/vim-easytags'
 Bundle 'majutsushi/tagbar'
 
+"Changes Bracket colours depending on nesting
+Bundle 'kien/rainbow_parentheses.vim'
 
 "markdown
 Bundle 'godlygeek/tabular'

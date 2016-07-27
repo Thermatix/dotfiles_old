@@ -1,1 +1,6 @@
-autocmd VimEnter * call StartUp()
+autocmd VimEnter * call StartUpWithoutArgs()
+
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces

@@ -31,7 +31,7 @@ set backspace=2
 
 let NERDTreeShowHidden=1
 
-function! StartUp()
+function! StartUpWithoutArgs()
     if 0 == argc()
         NERDTreeFocusToggle
     end
