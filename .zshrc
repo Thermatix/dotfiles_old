@@ -110,6 +110,16 @@ export NVM_DIR="$HOME/.nvm"
 
 
 
+# tail -f $1 | grep $2 -A 2
+function tinput() {
+    if [ "$3" != "" ]
+    then
+	    $(tail -f $1 | grep $2 -A $3)
+    else
+	    $(tail -f $1 | grep $2 -A 2)
+    fi
+}
+
 #TMOUT=1
 #RPROMPT='%{%F{blue}%}[%D{%H:%M:%S}]%{%f%}'
 #TRAPALRM() {

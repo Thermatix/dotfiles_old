@@ -93,7 +93,10 @@ Bundle 'airblade/vim-gitgutter'
 Bundle 'jiangmiao/auto-pairs'
 
 "multi cursor
-Bundle 'terryma/vim-multiple-cursors'
+" Bundle 'terryma/vim-multiple-cursors'
+
+"
+Bundle 'vim-scripts/multiselect'
 
 " Fuzzu finder for vim 
 Bundle 'wincent/command-t'
@@ -128,6 +131,9 @@ Bundle 'plasticboy/vim-markdown'
 
 "open FIle at line
 Bundle 'bogado/file-line'
+
+"config Generator for ycm
+Bundle 'rdnetto/YCM-Generator'
 
 " Gist
 Bundle 'mattn/webapi-vim'

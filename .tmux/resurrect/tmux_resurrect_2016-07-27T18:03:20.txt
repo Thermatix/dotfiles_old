@@ -1,0 +1,10 @@
+pane	3	1	:vim	1	:*	1	:/Users/Thermatix	1	vim	:vim
+pane	dev_enviroment	1	:vim	1	:*	1	:/Users/Thermatix/dev/ruby_projects/publish-check	0	vim	:vim
+vim
+pane	dev_enviroment	1	:vim	1	:*	2	:/Users/Thermatix	0	tail	:tail -f /var/log/webapps/app.publishcheck.com.error.log
+grep --color=auto --exclude-dir=.bzr --exclude-dir=CVS --exclude-dir=.git --exclude-dir=.hg --exclude-dir=.svn #<.*Error: -A 2
+pane	dev_enviroment	1	:vim	1	:*	3	:	1	reattach-to-user-namespace	:sudo ruby main.rb
+pane	dev_enviroment	1	:vim	1	:*	4	:/Users/Thermatix/dev/ruby_projects/publish-check	0	zsh	:
+window	3	1	1	:*	5faf,181x54,0,0,10
+window	dev_enviroment	1	1	:*	61d0,181x54,0,0[181x41,0,0,0,181x5,0,42,15,181x6,0,48{90x6,0,48,1,90x6,91,48,5}]
+state	dev_enviroment	

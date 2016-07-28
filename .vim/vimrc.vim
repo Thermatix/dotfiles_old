@@ -28,6 +28,8 @@ set ignorecase
 set smartcase
 set clipboard=unnamed
 set backspace=2
+set confirm
+set hidden
 
 let NERDTreeShowHidden=1
 
@@ -42,10 +44,8 @@ let g:vroom_map_keys = 0
 let g:vroom_use_dispatch = 1
 let g:vroom_use_zeus = 1
 
-let g:minimap_highlight='Visual'
 
 
-filetype plugin indent on " Enable filetype-specific indenting and plugins
 
 augroup myfiletypes
 	" Clear old autocmds in group
