@@ -100,7 +100,7 @@ alias ohmyzsh="vim ~/.oh-my-zsh"
 
 alias tmux="TERM=screen-256color-bce tmux -2"
 alias gitdelbranch=gitdelbranchfunc
-
+alias loadmysqldump="pv $1 | mysql -u root $1"
 
 eval "$(rbenv init -)"
 [[ -s $HOME/.rsvm/rsvm.sh ]] && . $HOME/.rsvm/rsvm.sh # This loads RSVM
@@ -145,3 +145,4 @@ load-nvmrc() {
   fi
 }
 add-zsh-hook chpwd load-nvmrc
+source /usr/local/Cellar/zsh-syntax-highlighting/0.4.1/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 
