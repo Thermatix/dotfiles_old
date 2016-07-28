@@ -114,6 +114,10 @@ Bundle 'tmux-plugins/vim-tmux-focus-events'
 "syntax highlighting for tmux/conf
 Bundle 'tmux-plugins/vim-tmux'
 
+"Slime like plugin, runs selected text in tmux selected tmux pane
+Bundle 'epeli/slimux'
+
+
 " Syntax checking
 Bundle 'scrooloose/syntastic'
 
@@ -128,6 +132,8 @@ Bundle 'kien/rainbow_parentheses.vim'
 "markdown
 Bundle 'godlygeek/tabular'
 Bundle 'plasticboy/vim-markdown'
+
+
 
 "open FIle at line
 Bundle 'bogado/file-line'

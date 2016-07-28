@@ -10,8 +10,7 @@ set t_Co=256
 colorscheme molokai
 
 " Show trailing whitespace and spaces before a tab:
-:highlight ExtraWhitespace ctermbg=red guibg=red
-:autocmd Syntax * syn match ExtraWhitespace /\s\+$\| \+\ze\\t/
+highlight ExtraWhitespace ctermbg=red guibg=red
 
 " Lovely linenumbers
 set nu
