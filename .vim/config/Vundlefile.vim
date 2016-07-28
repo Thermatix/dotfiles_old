@@ -96,7 +96,7 @@ Bundle 'jiangmiao/auto-pairs'
 " Bundle 'terryma/vim-multiple-cursors'
 
 "
-Bundle 'vim-scripts/multiselect'
+" Bundle 'vim-scripts/multiselect'
 
 " Fuzzu finder for vim 
 Bundle 'wincent/command-t'
