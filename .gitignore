@@ -6,7 +6,7 @@
 !.vim/**
 !*rc
 !*tmux/**
-!.zsh.**
+!.zsh/**
 #ignore these files specifically
 .CFUserTextEncoding
 .DS_Store
