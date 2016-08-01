@@ -66,17 +66,17 @@ export LIBRARY_PATH="$LIBRARY_PATH:/usr/local/lib"
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
+if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR='vim'
+else
+  export EDITOR='vim'
+fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
 # ssh
-# export SSH_KEY_PATH="~/.ssh/dsa_id"
+export SSH_KEY_PATH="~/.ssh/dsa_id"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -87,38 +87,22 @@ export LIBRARY_PATH="$LIBRARY_PATH:/usr/local/lib"
 #   if [ -f $LUNCHY_DIR/lunchy-completion.zsh ]; then
 #     . $LUNCHY_DIR/lunchy-completion.zsh
 #   fi
-
-gitdelbranchfunc(){
-  git branch -d $1
-  git push origin :$1
-}
-
-
-# Example aliases
-alias zshconfig="vim ~/.zshrc"
-alias ohmyzsh="vim ~/.oh-my-zsh"
-
-alias tmux="TERM=screen-256color-bce tmux -2"
-alias gitdelbranch=gitdelbranchfunc
-alias loadmysqldump="pv $1 | mysql -u root $1"
-
-eval "$(rbenv init -)"
+source ~/.zsh/functions.sh
+source ~/.zsh/aliases.sh
 [[ -s $HOME/.rsvm/rsvm.sh ]] && . $HOME/.rsvm/rsvm.sh # This loads RSVM
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 
+`ln -s /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport /usr/local/bin/airport`
 
 # tail -f $1 | grep $2 -A 2
-function tinput() {
-    if [ "$3" != "" ]
-    then
-	    $(tail -f $1 | grep $2 -A $3)
-    else
-	    $(tail -f $1 | grep $2 -A 2)
-    fi
-}
+# function tinput() {
+# 	echo tail -f $1 | grep $2 -A ${3:-2}
+# }
+
+
 
 #TMOUT=1
 #RPROMPT='%{%F{blue}%}[%D{%H:%M:%S}]%{%f%}'
@@ -145,4 +129,7 @@ load-nvmrc() {
   fi
 }
 add-zsh-hook chpwd load-nvmrc
-source /usr/local/Cellar/zsh-syntax-highlighting/0.4.1/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 
+source /usr/local/Cellar/zsh-syntax-highlighting/0.4.1/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"

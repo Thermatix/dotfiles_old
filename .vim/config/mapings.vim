@@ -31,7 +31,7 @@ map <leader>E :Explore .<cr>
 map <leader>e :Explore<cr>
 
 "nerd tree mapings
-map <C-n> <plug>NERDTreeFocusToggle<CR>
+" map <C-n> <plug>NERDTreeFocusToggle<CR>
 
 " shift plus arrow for selection mode
 " shift+arrow selection
@@ -39,8 +39,8 @@ map  <Del> <Esc>x1i
 vmap  <Del> <Esc>x1v
 
 "multi-cursor mappings"
-let g:multi_cursor_next_key='<C-d>'
-let g:multi_cursor_prev_key='<C-s>'
+let g:multi_cursor_next_key='<C-n>'
+let g:multi_cursor_prev_key='<C-p>'
 let g:multi_cursor_skip_key='<C-x>'
 let g:multi_cursor_quit_key='<Esc>'
 

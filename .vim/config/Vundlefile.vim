@@ -93,7 +93,7 @@ Bundle 'airblade/vim-gitgutter'
 Bundle 'jiangmiao/auto-pairs'
 
 "multi cursor
-" Bundle 'terryma/vim-multiple-cursors'
+Bundle 'terryma/vim-multiple-cursors'
 
 "
 " Bundle 'vim-scripts/multiselect'
@@ -103,7 +103,7 @@ Bundle 'wincent/command-t'
 
 
 " Easy motion for easy motion
-Bundle 'Lokaltog/vim-easymotion'
+"Bundle 'Lokaltog/vim-easymotion'
 "===============Tmux plugins====================
 " Running tests in tmux session
 Bundle 'tpope/vim-dispatch'
