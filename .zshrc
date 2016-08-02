@@ -53,7 +53,7 @@ plugins=(osx git gitfast git-extras ruby gem atom brew compleat last-working-dir
 
 # User configuration
 
-export PATH="$HOME/.cask/bin:/Library/PostgreSQL/9.5/bin/:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/.multirust/toolchains/stable/cargo/bin"
+export PATH="$HOME/.cask/bin:/Library/PostgreSQL/9.5/bin/:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/.multirust/toolchains/stable/cargo/bin:$HOME/.zsh/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 
@@ -87,8 +87,10 @@ export SSH_KEY_PATH="~/.ssh/dsa_id"
 #   if [ -f $LUNCHY_DIR/lunchy-completion.zsh ]; then
 #     . $LUNCHY_DIR/lunchy-completion.zsh
 #   fi
-source ~/.zsh/functions.sh
-source ~/.zsh/aliases.sh
+export CUST_FUNCTIONS="$HOME/.zsh/custom/functions.sh"
+
+source $CUST_FUNCTIONS
+source ~/.zsh/custom/aliases.sh
 [[ -s $HOME/.rsvm/rsvm.sh ]] && . $HOME/.rsvm/rsvm.sh # This loads RSVM
 
 export NVM_DIR="$HOME/.nvm"
