@@ -1,0 +1,5 @@
+#!/usr/local/bin/zsh -f
+
+source $CUST_FUNCTIONS
+
+print $(wifi_quality en0)
