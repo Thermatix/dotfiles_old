@@ -96,8 +96,10 @@ source ~/.zsh/custom/aliases.sh
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
-
-`ln -s /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport /usr/local/bin/airport`
+airport_path="/usr/local/bin/airport"
+if [ ! -L $airport_path ]; then
+	`ln -s /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport $airport_path`
+fi
 
 # tail -f $1 | grep $2 -A 2
 # function tinput() {
