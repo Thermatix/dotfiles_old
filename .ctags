@@ -1,0 +1,13 @@
+--recurse=yes
+--tag-relative=yes
+--fields=+l
+--languages=-javascript,sql,ruby,c,python
+--exclude=*.git*
+--exclude=*.pyc
+--exclude=*.pyo
+--exclude=.DS_Store
+--exclude=*.md
+--exclude=*.mkd
+--exclude=*.log
+--exclude=*.sql
+--exclude=*.db
