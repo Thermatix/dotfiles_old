@@ -32,7 +32,7 @@ Bundle 'tomasr/molokai'
 " air-line themes
 Bundle 'vim-airline/vim-airline-themes'
 
-
+ 
 Bundle 'altercation/vim-colors-solarized'
 
 "============language packages============
@@ -125,6 +125,7 @@ Bundle 'scrooloose/syntastic'
 Bundle 'xolox/vim-misc'
 Bundle 'xolox/vim-easytags'
 Bundle 'majutsushi/tagbar'
+Bundle 'ludovicchabant/vim-gutentags'
 
 "Changes Bracket colours depending on nesting
 Bundle 'kien/rainbow_parentheses.vim'
