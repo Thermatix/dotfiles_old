@@ -1,10 +1,11 @@
 set nocompatible " be iMproved
 so ~/.vim/config/Vundlefile.vim
 so ~/.vim/plugin/bclose.vim
-
+so ~/.vim/plugin/function_tag_finder.vim
 
 set tags=./tags; " Set tags directory
 set autoindent " Auto indention should be on
+set virtualedit=onemore 
 
 filetype plugin indent on
 
