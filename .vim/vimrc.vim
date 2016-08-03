@@ -40,6 +40,8 @@ function! StartUpWithoutArgs()
     end
 endfunction
 
+set autoread
+au CursorHold * if exists("t:NerdTreeBufName") |  @:call nerdtree#ui_glue#invokeKeyMap("C")<CR>| endif
 
 let g:vroom_map_keys = 0
 let g:vroom_use_dispatch = 1
