@@ -91,6 +91,7 @@ export CUST_FUNCTIONS="$HOME/.zsh/custom/functions.sh"
 
 source $CUST_FUNCTIONS
 source ~/.zsh/custom/aliases.sh
+source $HOME/.cargo/env
 [[ -s $HOME/.rsvm/rsvm.sh ]] && . $HOME/.rsvm/rsvm.sh # This loads RSVM
 
 export NVM_DIR="$HOME/.nvm"

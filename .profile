@@ -9,3 +9,5 @@ fi
 export LIBRARY_PATH="$LIBRARY_PATH:/usr/local/lib"
 export PATH="$HOME/.cask/bin:/Library/PostgreSQL/9.5/bin/:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/.multirust/toolchains/stable/cargo/bin:$HOME/.zsh/bin"
 
+
+export PATH="$HOME/.cargo/bin:$PATH"
