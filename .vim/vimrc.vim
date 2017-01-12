@@ -80,7 +80,9 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 1
 let g:syntastic_ruby_exec = '~/.rbenv/shims/ruby'
 
-
+let g:racer_cmd = "<path-to-racer>/target/release/racer"
+let $RUST_SRC_PATH="<path-to-rust-srcdir>/src/"
+let g:racer_experimental_completer = 1
 
 
 "Silver Searcher

@@ -53,7 +53,7 @@ plugins=(osx git gitfast git-extras ruby gem atom brew compleat last-working-dir
 
 # User configuration
 
-export PATH="$HOME/.cask/bin:/Library/PostgreSQL/9.5/bin/:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/.multirust/toolchains/stable/cargo/bin:$HOME/.zsh/bin"
+export PATH="$HOME/.cask/bin:/Library/PostgreSQL/9.5/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/usr/local/sbin:/sbin:$HOME/.multirust/toolchains/stable/cargo/bin:$HOME/.zsh/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 

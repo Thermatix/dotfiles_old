@@ -69,6 +69,9 @@ Bundle 'kchmck/vim-coffee-script'
 "Python Auto completion
 Bundle "davidhalter/jedi-vim"
 
+"=====Rust=======
+"Rust Auto completion
+Bundle "racer-rust/vim-racer"
 "============Vim plugins============
 
 " Dependencies of snipmate

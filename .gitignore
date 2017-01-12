@@ -24,3 +24,7 @@
 *viminfo*
 .vimtags
 .tmux/resurrect/**
+.cargo/*
+.mongorc.js
+.dbshell
+.netrc
