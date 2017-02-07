@@ -72,6 +72,8 @@ Bundle "davidhalter/jedi-vim"
 "=====Rust=======
 "Rust Auto completion
 Bundle "racer-rust/vim-racer"
+Bundle "rust-lang/rust.vim"
+
 "============Vim plugins============
 
 " Dependencies of snipmate
@@ -84,7 +86,7 @@ Bundle 'vim-airline/vim-airline'
 " Git tools
 Bundle 'tpope/vim-fugitive'
 "gtk clone
-Bundle 'gregsexton/gitv' 
+Bundle 'gregsexton/gitv'
 
 " Gutter
 Bundle 'airblade/vim-gitgutter'

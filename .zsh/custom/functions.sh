@@ -1,31 +1,3 @@
-
-
-wifi_quality() {
-   _adapter_id="${1:-wlan0}"	
-   if [ $(ifconfig $_adapter_id | grep UP | wc -l) -eq 1 ]
-   then
-      _linkQual="$(airport -I | grep -E CtlRSSI | cut -d'-' -f2)" 
-     # _linkQual="`iwconfig $_adapter_id | grep Quality | cut -d'=' -f2 | cut -d' ' -f1 | cut -d'/' -f1`" # this is for linux
-     if [ $_linkQual -gt 52 ] # >75% link qual
-     then
-       _linkSparked=$(spark 1 2 3 4)
-     elif [ $_linkQual -gt 35 ] # >50% link qual
-     then
-       _linkSparked=$(spark 1 2 3 0)
-     elif [ $_linkQual -gt 17 ] # 25% link qual
-     then
-       _linkSparked=$(spark 1 2 0 0)
-     elif [ $_linkQual -gt 7 ] # 25% link qual
-     then
-       _linkSparked=$(spark 1 0 0 0)
-     else # < 25%
-       _linkSparked=$(spark 0 0 0 0)
-     fi
-
-     echo $_linkSparked
-   fi
-}
-
 function gitdelbranchfunc(){
   git branch -d $1
   git push origin :$1
@@ -39,3 +11,42 @@ function loadmysqldump() {
 	pv $1 | mysql -u root $1
 }
 
+if { [ "$TERM" = "screen" ] && [ -n "$TMUX" ]; } then
+function to_all()
+{
+  all-panes-bg_ "$@" &
+}
+
+all-panes-bg_()
+{
+  local COMMAND=$@
+
+  local ORIG_WINDOW_INDEX=`tmux display-message -p '#I'`
+  local ORIG_PANE_INDEX=`tmux display-message -p '#P'`
+
+  for WINDOW in `tmux list-windows -F '#I'`; do
+    tmux select-window -t $WINDOW
+
+    local ORIG_PANE_SYNC=`tmux show-window-options | grep '^synchronize-panes' | awk '{ print $2 }'`
+
+    tmux set-window-option synchronize-panes on
+
+    for i in {1..25}; do tmux send-keys 'C-['; done
+
+    tmux send-keys C-z
+
+    tmux send-keys C-c
+
+    tmux send-keys "$COMMAND; fg 2>/dev/null; echo -n" C-m
+
+    if [[ -n "$ORIG_PANE_SYNC" ]]; then
+      tmux set-window-option synchronize-panes "$ORIG_PANE_SYNC"
+    else
+      tmux set-window-option -u synchronize-panes
+    fi
+  done
+
+  tmux select-window -t $ORIG_WINDOW_INDEX
+  tmux select-pane -t $ORIG_PANE_INDEX
+}
+fi
