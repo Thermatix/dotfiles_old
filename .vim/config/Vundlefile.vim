@@ -32,10 +32,14 @@ Bundle 'tomasr/molokai'
 " air-line themes
 Bundle 'vim-airline/vim-airline-themes'
 
- 
+
 Bundle 'altercation/vim-colors-solarized'
 
 "============language packages============
+"=====oneoffs=====
+"Toml support
+Bundle "cespare/vim-toml"
+
 
 "=====ruby=====
 " Vim Ruby
