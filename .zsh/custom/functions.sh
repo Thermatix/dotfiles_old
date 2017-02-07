@@ -24,27 +24,23 @@ all-panes-bg_()
   local ORIG_WINDOW_INDEX=`tmux display-message -p '#I'`
   local ORIG_PANE_INDEX=`tmux display-message -p '#P'`
 
-  for WINDOW in `tmux list-windows -F '#I'`; do
-    tmux select-window -t $WINDOW
+  local ORIG_PANE_SYNC=`tmux show-window-options | grep '^synchronize-panes' | awk '{ print $2 }'`
 
-    local ORIG_PANE_SYNC=`tmux show-window-options | grep '^synchronize-panes' | awk '{ print $2 }'`
+  tmux set-window-option synchronize-panes on
 
-    tmux set-window-option synchronize-panes on
+  for i in {1..25}; do tmux send-keys 'C-['; done
 
-    for i in {1..25}; do tmux send-keys 'C-['; done
+  tmux send-keys C-z
 
-    tmux send-keys C-z
+  tmux send-keys C-c
 
-    tmux send-keys C-c
+  tmux send-keys "$COMMAND; fg 2>/dev/null; echo -n" C-m
 
-    tmux send-keys "$COMMAND; fg 2>/dev/null; echo -n" C-m
-
-    if [[ -n "$ORIG_PANE_SYNC" ]]; then
-      tmux set-window-option synchronize-panes "$ORIG_PANE_SYNC"
-    else
-      tmux set-window-option -u synchronize-panes
-    fi
-  done
+  if [[ -n "$ORIG_PANE_SYNC" ]]; then
+    tmux set-window-option synchronize-panes "$ORIG_PANE_SYNC"
+  else
+    tmux set-window-option -u synchronize-panes
+  fi
 
   tmux select-window -t $ORIG_WINDOW_INDEX
   tmux select-pane -t $ORIG_PANE_INDEX
