@@ -75,7 +75,6 @@ Bundle "davidhalter/jedi-vim"
 
 "=====Rust=======
 "Rust Auto completion
-Bundle "racer-rust/vim-racer"
 Bundle "rust-lang/rust.vim"
 
 "============Vim plugins============

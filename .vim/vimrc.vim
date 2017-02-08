@@ -22,10 +22,6 @@ set wildignore+=*.o,*.obj,.git,*.rbc,*.class,.svn,vendor/gems/*
 "key custom key mappings for muli curser
 let g:multi_cursor_use_default_mapping=0
 
-" Vim-Racer config
-let g:racer_cmd = "~/.cargo/bin/racer"
-let g:racer_experimental_completer = 1
-
 
 " Searching
 set hlsearch
@@ -59,7 +55,7 @@ augroup myfiletypes
 	" Clear old autocmds in group
 	autocmd!
 	" autoindent with two spaces, always expand tabs
-	autocmd FileType ruby,eruby,yaml,markdown set ai sw=2 sts=2 et
+	autocmd FileType ruby,eruby,yaml,markdown,rust set ai sw=2 sts=2 et
 augroup END
 
 
@@ -84,8 +80,9 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 1
 let g:syntastic_ruby_exec = '~/.rbenv/shims/ruby'
+let g:syntastic_rust_checkers = ['rustc']
 
-
+let g:ycm_rust_src_path = expand($RUST_SRC_PATH)
 
 "Silver Searcher
 if executable('ag')
