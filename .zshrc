@@ -136,5 +136,7 @@ load-nvmrc() {
 add-zsh-hook chpwd load-nvmrc
 source /usr/local/Cellar/zsh-syntax-highlighting/0.4.1/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+export RUST_SRC_PATH=~/.multirust/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src
+
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
