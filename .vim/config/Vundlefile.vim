@@ -57,6 +57,8 @@ Bundle 'joker1007/vim-ruby-heredoc-syntax'
 "=====javascript=====
 " javascript
 Bundle 'pangloss/vim-javascript'
+"Tern-based JavaScript editing support
+Bundle 'ternjs/tern_for_vim'
 "handle bars templates
 Bundle 'nono/vim-handlebars'
 " jsx syntax

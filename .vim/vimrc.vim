@@ -25,6 +25,8 @@ set wildignore+=*.o,*.obj,.git,*.rbc,*.class,.svn,vendor/gems/*
 "key custom key mappings for muli curser
 let g:multi_cursor_use_default_mapping=0
 
+"enable mouse support
+set mouse=a
 
 " Searching
 set hlsearch
