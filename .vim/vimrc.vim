@@ -15,6 +15,9 @@ so ~/.vim/config/vimFileConfig.vim
 
 so ~/.vim/config/mapings.vim
 
+so ~/.vim/config/tagbar_config.vim
+
+
 " Tab completion
 set wildmode=list:longest,list:full
 set wildignore+=*.o,*.obj,.git,*.rbc,*.class,.svn,vendor/gems/*
@@ -79,7 +82,7 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 1
-let g:syntastic_ruby_exec = '~/.rbenv/shims/ruby'
+let g:syntastic_ruby_exec = expand('~/.rbenv/shims/ruby')
 let g:syntastic_rust_checkers = ['rustc']
 
 let g:ycm_rust_src_path = expand($RUST_SRC_PATH)
