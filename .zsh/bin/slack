@@ -1,0 +1,3 @@
+#!/usr/local/bin/zsh -f
+
+node ~/dev/javascript/terminal-slack/slackClient.js
