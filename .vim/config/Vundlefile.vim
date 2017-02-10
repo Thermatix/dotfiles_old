@@ -77,7 +77,9 @@ Bundle "davidhalter/jedi-vim"
 
 "=====Rust=======
 "Rust Auto completion
-Bundle "rust-lang/rust.vim"
+" Bundle "rust-lang/rust.vim"
+"forked Pluging, using this in attempt to fix missing crate problem
+Bundle "jlevesy/rust.vim"
 
 "============Vim plugins============
 

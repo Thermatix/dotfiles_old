@@ -85,9 +85,10 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 1
 let g:syntastic_ruby_exec = expand('~/.rbenv/shims/ruby')
-let g:syntastic_rust_checkers = ['rustc']
+let g:syntastic_rust_checkers = ['cargo', 'rustc']
 
 let g:ycm_rust_src_path = expand($RUST_SRC_PATH)
+let g:syntastic_quiet_messages = { 'regex': 'never' }
 
 "Silver Searcher
 if executable('ag')
