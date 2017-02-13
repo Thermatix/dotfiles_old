@@ -7,8 +7,12 @@ set tags=./tags; " Set tags directory
 set autoindent " Auto indention should be on
 set virtualedit=onemore 
 
-filetype plugin indent on
+"sets gutter line numbers to be both relative and absolute
+set relativenumber 
+set number  
 
+filetype plugin indent on
+" load sub config files
 so ~/.vim/config/visual.vim
 
 so ~/.vim/config/vimFileConfig.vim
@@ -38,8 +42,8 @@ set backspace=2
 set confirm
 set hidden
 
-let NERDTreeShowHidden=1
-
+let NERDTreeShowHidden=1 "set nerdtree to show hidden files
+"sets nerd tree to focus when vim is started without any args
 function! StartUpWithoutArgs()
     if 0 == argc()
         NERDTreeFocusToggle
@@ -63,7 +67,7 @@ augroup myfiletypes
 	autocmd FileType ruby,eruby,yaml,markdown,rust set ai sw=2 sts=2 et
 augroup END
 
-
+"nerdtree git indicators
 let g:NERDTreeIndicatorMapCustom = {
     \ "Modified"  : "✹",
     \ "Staged"    : "✚",
@@ -75,18 +79,19 @@ let g:NERDTreeIndicatorMapCustom = {
     \ "Clean"     : "✔︎",
     \ "Unknown"   : "?"
     \ }
-
+" status line info
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
+"syntastic config
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 1
 let g:syntastic_ruby_exec = expand('~/.rbenv/shims/ruby')
 let g:syntastic_rust_checkers = ['cargo', 'rustc']
-
+let g:syntastic_loc_list_height=7
 let g:ycm_rust_src_path = expand($RUST_SRC_PATH)
 let g:syntastic_quiet_messages = { 'regex': 'never' }
 
@@ -102,5 +107,5 @@ if executable('ag')
 	    " ag is fast enough that CtrlP doesn't need to cache
 	let g:ctrlp_use_caching = 0
 endif
-
+" load startup commands
 so ~/.vim/config/startup_commands.vim

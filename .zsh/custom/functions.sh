@@ -11,8 +11,12 @@ function loadmysqldump() {
 	pv $1 | mysql -u root $1
 }
 
+function sToken() {
+  export SLACK_TOKEN="$@"
+}
+
 if { [ "$TERM" = "screen" ] && [ -n "$TMUX" ]; } then
-function to_all()
+function ta()
 {
   all-panes-bg_ "$@" &
 }
