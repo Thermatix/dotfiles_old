@@ -35,6 +35,9 @@ Bundle 'vim-airline/vim-airline-themes'
 
 Bundle 'altercation/vim-colors-solarized'
 
+"breezy theme
+Bundle 'fneu/breezy'
+
 "============language packages============
 "=====oneoffs=====
 "Toml support

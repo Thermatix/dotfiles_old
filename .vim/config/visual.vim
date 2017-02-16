@@ -7,6 +7,8 @@ set background=dark
 let g:molokai_original=1
 let g:rehash256=1
 set t_Co=256
+" set termguicolors " if you want to run vim in a terminal
+" colorscheme breezy
 colorscheme molokai
 
 " Show trailing whitespace and spaces before a tab:
