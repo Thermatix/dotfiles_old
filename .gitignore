@@ -8,6 +8,7 @@
 !*tmux/**
 !.zsh/**
 #ignore these files specifically
+.yarnc
 .multirust
 .CFUserTextEncoding
 .DS_Store
