@@ -84,7 +84,14 @@ Bundle "davidhalter/jedi-vim"
 "forked Pluging, using this in attempt to fix missing crate problem
 Bundle "jlevesy/rust.vim"
 
+"=====Kotlin======
+"Kotlin Syntax Support
+Bundle "udalov/kotlin-vim"
+
 "============Vim plugins============
+
+"better start screen
+Plug 'mhinz/vim-startify'
 
 " Dependencies of snipmate
 Bundle 'MarcWeber/vim-addon-mw-utils'
@@ -116,23 +123,6 @@ Bundle 'terryma/vim-multiple-cursors'
 " Fuzzu finder for vim 
 Bundle 'wincent/command-t'
 
-
-" Easy motion for easy motion
-"Bundle 'Lokaltog/vim-easymotion'
-"===============Tmux plugins====================
-" Running tests in tmux session
-Bundle 'tpope/vim-dispatch'
-"navigate tmux pains easily
-Bundle 'christoomey/vim-tmux-navigator'
-Bundle 'tmux-plugins/vim-tmux-focus-events'
-
-"syntax highlighting for tmux/conf
-Bundle 'tmux-plugins/vim-tmux'
-
-"Slime like plugin, runs selected text in tmux selected tmux pane
-Bundle 'epeli/slimux'
-
-
 " Syntax checking
 Bundle 'scrooloose/syntastic'
 
@@ -146,10 +136,10 @@ Bundle 'ludovicchabant/vim-gutentags'
 Bundle 'kien/rainbow_parentheses.vim'
 
 "markdown
-Bundle 'godlygeek/tabular'
 Bundle 'plasticboy/vim-markdown'
 
-
+"text alignment
+Bundle 'godlygeek/tabular'
 
 "open FIle at line
 Bundle 'bogado/file-line'
