@@ -111,7 +111,7 @@ local_branch_suffix=)
 # change_conflicted_suffix_intensity=Vivid
 #
 # --
-# show_part_stashes=True
+show_part_stashes=True
 # stash_suffix=≡
 # stash_suffix_color=Green
 # stash_suffix_intensity=Vivid
