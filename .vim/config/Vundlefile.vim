@@ -88,10 +88,15 @@ Bundle "jlevesy/rust.vim"
 "Kotlin Syntax Support
 Bundle "udalov/kotlin-vim"
 
+"====tmux======
+"Tmux conf highlight support
+
+Bundle "tmux-plugins/vim-tmux"
+
 "============Vim plugins============
 
 "better start screen
-Plug 'mhinz/vim-startify'
+Bundle 'mhinz/vim-startify'
 
 " Dependencies of snipmate
 Bundle 'MarcWeber/vim-addon-mw-utils'
