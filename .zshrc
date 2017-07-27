@@ -122,7 +122,8 @@ build_prompt() {
   prompt_context
   prompt_dir
   prompt_end
-  git-radar --zsh --fetch
+  # git-radar --zsh --fetch
+	gitHud zsh
 }
 
 
