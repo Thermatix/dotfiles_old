@@ -114,3 +114,9 @@ fi
 if [[ ! $ZSH_NAME = 'zsh' ]]; then
 	sudo -s "echo '/usr/local/bin/zsh' >> /etc/shells" && chsh -s /usr/local/bin/zsh
 fi
+
+#install tmux plugin manager
+tmux_loc = "$HOME/.tmux/plugins/tpm"
+if [[! -a $tmux_loc ]]; then
+	git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+fi
