@@ -14,6 +14,13 @@ ohmyzshplugs=(
 
 ohmyzshlibs=(
 	completion
+	compfix
+	nvm
+	grep
+	misc
+	key-bindings
+	history
+	spectrum
 )
 
 
