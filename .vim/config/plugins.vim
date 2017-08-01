@@ -171,6 +171,8 @@ Plug 'scrooloose/nerdTree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'jistr/vim-nerdtree-tabs'
 
+"repl support for certain languages
+Plug 'ujihisa/repl.vim'
 
 call plug#end()
 
