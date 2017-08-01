@@ -62,14 +62,17 @@ else
 fi
 
 #install homebrew based apps
-for app in $brew; do
-	if brew ls --versions $app > /dev/null; then
-		print "$app installed, skipping"
-	else
-		print "installing $app"
-		brew install $app
-	fi
-done
+which -s brew
+if [[ $? != 0 ]] ; then
+	for app in $brew; do
+		if brew ls --versions $app > /dev/null; then
+			print "$app installed, skipping"
+		else
+			print "installing $app"
+			brew install $app
+		fi
+	done
+fi
 
 
 # Check if Heroku toolbelt is installed
