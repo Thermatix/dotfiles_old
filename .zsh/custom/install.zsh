@@ -64,6 +64,7 @@ fi
 #install homebrew based apps
 which -s brew
 if [[ $? != 0 ]] ; then
+else
 	for app in $brew; do
 		if brew ls --versions $app > /dev/null; then
 			print "$app installed, skipping"
