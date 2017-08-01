@@ -98,7 +98,8 @@ if [[ ! -a $HOME/.zplug/init.zsh ]]; then
 	else
 		print 'zplug installed, skipping'
 fi
-
+#install nvm
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash
 #install vim-plug
 vim_plug_loc="$HOME/.vim/autoload/plug.vim"
 if [[ ! -a $vim_plug_loc ]]; then
@@ -109,3 +110,5 @@ else
 	print 'vim-plug installed, skipping'
 fi
 
+#sets default shell to zsh
+sudo -s 'echo /usr/local/bin/zsh >> /etc/shells' && chsh -s /usr/local/bin/zsh
