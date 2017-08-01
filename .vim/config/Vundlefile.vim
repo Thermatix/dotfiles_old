@@ -51,8 +51,12 @@ Bundle 'vim-ruby/vim-ruby'
 Bundle 'tpope/vim-rails'
 " Ruby Tests
 Bundle 'skalnik/vim-vroom'
+
+"Rails Snippets
+" Bundle 'activebridge/rails-snippets'
+
 " erb
-"Bundle 'whatyouhide/vim-textobj-erb'
+" Bundle 'whatyouhide/vim-textobj-erb'
 
 "Heredoc Highlighting
 Bundle 'joker1007/vim-ruby-heredoc-syntax'
@@ -93,6 +97,8 @@ Bundle "udalov/kotlin-vim"
 
 Bundle "tmux-plugins/vim-tmux"
 
+Bundle "christoomey/vim-tmux-navigator"
+
 "============Vim plugins============
 
 "better start screen
@@ -127,6 +133,7 @@ Bundle 'terryma/vim-multiple-cursors'
 
 " Fuzzu finder for vim 
 Bundle 'wincent/command-t'
+" Bund;e 'junegunn/fzf.vim'
 
 " Syntax checking
 Bundle 'scrooloose/syntastic'

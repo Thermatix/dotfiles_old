@@ -7,6 +7,7 @@ set tags=./tags; " Set tags directory
 set autoindent " Auto indention should be on
 set virtualedit=onemore 
 
+
 "sets gutter line numbers to be both relative and absolute
 set relativenumber 
 set number  

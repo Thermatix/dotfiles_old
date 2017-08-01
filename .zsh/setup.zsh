@@ -65,4 +65,5 @@ build_prompt() {
 eval "$(rbenv init -)"
 
 
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 # source /usr/local/Cellar/zsh-syntax-highlighting/0.4.1/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
