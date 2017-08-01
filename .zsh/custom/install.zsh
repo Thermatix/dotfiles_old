@@ -111,4 +111,6 @@ else
 fi
 
 #sets default shell to zsh
-sudo -s 'echo /usr/local/bin/zsh >> /etc/shells' && chsh -s /usr/local/bin/zsh
+if [[ ! $ZSH_NAME = 'zsh' ]]; then
+	sudo -s "echo '/usr/local/bin/zsh' >> /etc/shells" && chsh -s /usr/local/bin/zsh
+fi
