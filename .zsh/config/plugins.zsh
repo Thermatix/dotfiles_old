@@ -22,7 +22,7 @@ plugins=(
 	zsh-users/zsh-completions
 	zsh-users/zsh-autosuggestions
 	HeroCC/LS_COLORS
-	reem/watch,
+	reem/watch
 )
 
 
@@ -40,7 +40,7 @@ for plugin in $plugins; do
 done
 
 
-zplug	  from:github
+zplug "themes/agnoster", from:oh-my-zsh, as:theme
 zplug "lib/clipboard", from:oh-my-zsh, if:"[[ $OSTYPE == *darwin* ]]"
 
 if ! zplug check --verbose; then
