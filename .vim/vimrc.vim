@@ -1,5 +1,5 @@
 set nocompatible " be iMproved
-so ~/.vim/config/Vundlefile.vim
+so ~/.vim/config/plugins.vim
 " so ~/.vim/plugin/bclose.vim
 so ~/.vim/plugin/function_tag_finder.vim
 
