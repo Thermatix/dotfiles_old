@@ -100,6 +100,12 @@ if [[ ! -a $HOME/.zplug/init.zsh ]]; then
 fi
 #install nvm
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash
+
+sudo npm install -g tmux-cpu
+sudo npm install -g tmux-mem
+
+
+
 #install vim-plug
 vim_plug_loc="$HOME/.vim/autoload/plug.vim"
 if [[ ! -a $vim_plug_loc ]]; then
