@@ -44,8 +44,8 @@ set confirm
 set hidden
 
 
-let g:vimfiler_as_default_explorer = 1
-" let NERDTreeShowHidden=1 "set nerdtree to show hidden files
+" let g:vimfiler_as_default_explorer = 1
+let NERDTreeShowHidden=1 "set nerdtree to show hidden files
 "sets nerd tree to focus when vim is started without any args
 function! StartUpWithoutArgs()
     if 0 == argc()

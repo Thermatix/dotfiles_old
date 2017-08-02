@@ -139,7 +139,7 @@ Plug 'scrooloose/syntastic'
 
 "auto file taging and browser
 Plug 'xolox/vim-misc'
-Plug 'xolox/vim-easytags'
+" Plug 'xolox/vim-easytags'
 Plug 'majutsushi/tagbar'
 Plug 'ludovicchabant/vim-gutentags'
 
@@ -167,12 +167,13 @@ Plug 'danro/rename.vim'
 Plug 'ap/vim-buftabline'
 
 " nerd tree and Plugins
-" Plug 'scrooloose/nerdTree'
-" Plug 'Xuyuanp/nerdtree-git-plugin'
-" Plug 'jistr/vim-nerdtree-tabs'
+Plug 'scrooloose/nerdTree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'jistr/vim-nerdtree-tabs'
 "
-Plug 'Shougo/unite.vim'
-Plug 'Shougo/vimfiler.vim'
+Plug 'ryanoasis/vim-devicons'
+" Plug 'Shougo/unite.vim'
+" Plug 'Shougo/vimfiler.vim'
 
 "repl support for certain languages
 Plug 'ujihisa/repl.vim'
