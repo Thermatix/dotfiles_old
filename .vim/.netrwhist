@@ -1,11 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =9
-let g:netrw_dirhist_1='/Users/Thermatix/dev/work/formulate/excellere_hub_rails'
-let g:netrw_dirhist_2='/Users/Thermatix/dev/work/formulate/excellere_hub_rails/bin'
-let g:netrw_dirhist_3='/Users/Thermatix/dev/work/formulate/excellere_hub_rails'
-let g:netrw_dirhist_4='/Users/Thermatix/dev/work/formulate/excellere_hub_rails/bin'
-let g:netrw_dirhist_5='/Users/Thermatix/dev/work/formulate'
-let g:netrw_dirhist_6='/Users/Thermatix/dev/work'
-let g:netrw_dirhist_7='/Users/Thermatix/dev'
-let g:netrw_dirhist_8='/Users/Thermatix/dev/work/formulate/excellere_hub_rails'
-let g:netrw_dirhist_9='/Users/Thermatix/dev/work/formulate/excellere_hub_rails/app/controllers'
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/Users/thermatix/.vim'
+let g:netrw_dirhist_2='/Users/thermatix/.vim/config'
+let g:netrw_dirhist_3='/Users/thermatix'
+let g:netrw_dirhist_4='/Users/thermatix/.vim'

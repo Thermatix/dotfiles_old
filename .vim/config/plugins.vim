@@ -167,9 +167,12 @@ Plug 'danro/rename.vim'
 Plug 'ap/vim-buftabline'
 
 " nerd tree and Plugins
-Plug 'scrooloose/nerdTree'
-Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'jistr/vim-nerdtree-tabs'
+" Plug 'scrooloose/nerdTree'
+" Plug 'Xuyuanp/nerdtree-git-plugin'
+" Plug 'jistr/vim-nerdtree-tabs'
+"
+Plug 'Shougo/unite.vim'
+Plug 'Shougo/vimfiler.vim'
 
 "repl support for certain languages
 Plug 'ujihisa/repl.vim'
