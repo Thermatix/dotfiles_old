@@ -1,3 +1,1 @@
-#!/usr/local/bin/zsh -f
-
-node --use_strict ~/dev/javascript/terminal-slack/main.js
+/Users/thermatix/dotfiles/tag-zsh/zsh/bin/slack

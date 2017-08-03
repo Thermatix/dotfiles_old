@@ -1,2 +1,1 @@
-
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+/Users/thermatix/dotfiles/tag-bash/bashrc
